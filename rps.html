@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container rps-container">
+
+  <a href="index.html" class="back-btn">← Back to Menu</a>
+
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="score" id="score">You: 0 | Computer: 0</div>
+
+  <div class="rps-options">
+    <div class="option" onclick="playRPS('rock')">🪨</div>
+    <div class="option" onclick="playRPS('paper')">📄</div>
+    <div class="option" onclick="playRPS('scissors')">✂️</div>
+  </div>
+
+  <div id="rps-result" class="result"></div>
+
+  <div class="rps-display">
+    <div>
+      <p>You</p>
+      <div id="youChoice" style="font-size:60px;"></div>
+    </div>
+
+    <div>
+      <p>Computer</p>
+      <div id="compChoice" style="font-size:60px;"></div>
+    </div>
+  </div>
+
+  <button class="reset-btn" onclick="resetRPS()">Reset Score</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
